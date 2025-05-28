@@ -88,4 +88,12 @@
         align-items: center;
         text-align: center;
     }
+    #btn_local {
+            -webkit-tap-highlight-color: transparent !important;
+            background-color: #e4e4da !important;
+    }
+        
+    #btn_local:active {
+            background-color: #e4e4da !important;
+    }
 }
