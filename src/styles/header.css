@@ -45,27 +45,49 @@ header {
     #nav_list, #navbar .btn_default {
         display: none;
     }
+    
     #mobile_btn {
         display: block;
         border: none;
         background-color: transparent;
         font-size: 1.5rem;
         cursor: pointer;
+        color: #537D5D;
+        -webkit-tap-highlight-color: transparent; /* Mantém apenas o prefixo WebKit */
+        outline: none; /* Adiciona para melhor acessibilidade */
     }
+
+    #mobile_btn i.fa-x {
+        color: #537D5D;
+    }
+
+    #mobile_menu .btn_default {
+        -webkit-tap-highlight-color: transparent;
+        background-color: #73946B;
+        color: white;
+    }
+
+    #mobile_nav_list .nav_item a {
+        -webkit-tap-highlight-color: transparent;
+        color: #1d1d1dad;
+    }
+
+    /* O restante do seu CSS permanece igual */
     #mobile_menu.active {
         display: flex;
         flex-direction: column;
-        align-items: center;;
+        align-items: center;
     }
+
     #mobile_nav_list {
         display: flex;
         flex-direction: column;
         gap: 12px;
         margin: 12px 0px;
     }
+
     #mobile_nav_list .nav_item {
         list-style: none;
         text-align: center;
     }
-    
 }
